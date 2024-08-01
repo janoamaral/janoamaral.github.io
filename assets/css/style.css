@@ -1,0 +1,30 @@
+body {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.debug {
+  border: 1px dashed magenta;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.5rem;
+}
