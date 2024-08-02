@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<header class="flex-col align-center text-center masthead">
+  <div>
+    <img class="rounded-full avatar" src="https://avatars.githubusercontent.com/u/10008708?v=4" />
+    <h1>
+      Alejandro Amaral
+    </h1>
+  </div>
+  <div>
+    <p>
+    Hola, soy Jano, un analista de sistemas con más de 13 años de experiencia 
+    poniendo productos digitales en producción 🚀
+    </p>
+  </div>
+</header>
+
+<section>
+  {% for post in site.posts limit:1 %}
+  <div class="post-card">
+    <a href={{post.url}}>
+      <span class="date">{{post.date | date: "%B %d, %Y"}}</span>
+      <h2>{{post.title}}</h2>
+      {{post.description}}
+    </a>
+  </div>
+  {% endfor %}
+</section>
