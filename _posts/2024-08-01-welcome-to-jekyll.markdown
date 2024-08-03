@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Volviendo al ruedo"
+title:  "Volviendo a lo básico"
 date:   2024-08-01 20:29:02 -0300
 categories: jekyll update
 ---
@@ -14,12 +14,20 @@ Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit number
 
 Jekyll also offers powerful support for code snippets:
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+{% highlight c %}
+// Simple C program to display "Hello World"
+
+// Header file for input output functions
+#include <stdio.h>
+
+// Main function: entry point for execution
+int main() {
+
+    // writing print statement to print hello world
+    printf("Hello World");
+
+    return 0;
+}
 {% endhighlight %}
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].

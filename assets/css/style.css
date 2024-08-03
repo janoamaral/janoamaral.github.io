@@ -4,6 +4,8 @@
   --color-primary: #1a1b26;
   --color-secondary: #f8f8f2;
   --color-accent: #5b48d2;
+  --color-comments: #565f89;
+  --color-keyword: #bb9af7;
 }
 
 * {
@@ -122,7 +124,7 @@ nav ul a {
 .masthead p {
   margin-top: 0rem;
   padding-top: 0rem;
-  color: #a0aec0;
+  color: var(--color-comments);
 }
 
 .post-card {
@@ -141,6 +143,14 @@ nav ul a {
   transition: border 0.3s ease;
 }
 
+.post-card:hover .more {
+  transition:
+    color 0.3s ease,
+    background 0.3s ease;
+  color: var(--color-primary);
+  background: var(--color-keyword);
+}
+
 .post-card h2 {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
@@ -157,14 +167,17 @@ nav ul a {
 
 .post-card .more {
   margin-top: 2rem;
-  color: #a0aec0;
+  color: var(--color-keyword);
   padding: 0.5rem 4rem;
-  border: 1px solid #565f89;
+  border: 1px solid var(--color-keyword);
   display: inline-block;
   border-radius: 3rem;
+  transition:
+    color 0.3s ease,
+    background 0.3s ease;
 }
 
-.post > h1 {
+.post>h1 {
   font-size: 2.5rem;
   margin-top: 0.5rem;
   margin-bottom: 3rem;
@@ -605,7 +618,30 @@ article {
   background-color: transparent;
 }
 
-.post > article pre {
+.post {
+  margin: 4rem 0;
+}
+
+.post>article code {
+  background: #24283b;
+  color: #9aa5ce;
+  font-weight: 600;
+  padding: 0.1rem 0.5rem;
+  border-radius: 3px;
+}
+
+.post>article p {
+  margin: 1.5rem 0;
+}
+
+.post>article a {
+  color: #7aa2f7;
+}
+
+.post>article pre {
+  font-size: 1rem;
+  border-radius: 8px;
   overflow-y: auto;
   padding: 1rem;
+  margin: 2rem 0;
 }
