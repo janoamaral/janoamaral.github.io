@@ -33,3 +33,4 @@ github_username:  jekyll
 theme: minima
 plugins:
   - jekyll-feed
+host: 0.0.0.0

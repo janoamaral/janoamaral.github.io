@@ -11,20 +11,23 @@ layout: default
   </div>
   <div>
     <p>
-    Hola, soy Jano, un analista de sistemas con más de 13 años de experiencia 
+    Hola, soy Alejandro (aka Jano), un analista de sistemas con más de 13 años de experiencia 
     poniendo productos digitales en producción 🚀
     </p>
   </div>
 </header>
 
 <section>
-  {% for post in site.posts limit:1 %}
-  <div class="post-card">
-    <a href={{post.url}}>
-      <span class="date">{{post.date | date: "%B %d, %Y"}}</span>
-      <h2>{{post.title}}</h2>
-      {{post.description}}
+  {% for post in site.posts limit:5 %}
+    <a class="post-card"href={{post.url}}>
+      <div style="padding:0 1rem">
+        <small class="date">{{post.date | date: "%B %d, %Y"}}</small>
+        <h2>{{post.title}}</h2>
+        <p>
+          {{post.excerpt | truncate: 450}}
+        </p>
+        <div class="more">Leer más</div>
+      </div>
     </a>
-  </div>
   {% endfor %}
 </section>
