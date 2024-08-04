@@ -5,35 +5,31 @@ date: 2024-08-01 20:29:02 -0300
 categories: general
 ---
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Y vamos pegando la vuelta. Esta es la tercera vez que pongo un blog
+personal en línea. Y el quinto intento de diseño... Después de probar Next,
+vanilla JS, HTMx me terminé decidiendo por lo más básico de lo básico: un sitio
+estático en [Jekyll][jekyllrb].
 
-Jekyll requires blog post files to be named according to the following format:
+Al fin y al cabo lo que realmente quiero es una plataforma para poder subir mi
+contenido, sin ser esclavo de las redes sociales. Así que armado con Neovim,
+un poco de HTML, algunas líneas de CSS y unas 4 horas para mezclar todo, acá
+estamos de nuevo.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+Esta nueva edición del blog está orientada 100% al pragmatismo, ya no tengo
+tanto tiempo cómo en otros tiempos, así que ponerme a desarrollar o implementar
+y mantener un sistema en mi otro servidor estaba fuera de duda. Por lo que
+terminé decidiendo usar [GitHub pages][ghpages] para hostear el sitio.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Con el paso del tiempo iré agregando nuevas features, reconozco que actualmante
+está bastante espartano, pero _¡hey!_ al menos puedo empezar a escribir sin tener
+que preocuparme por otros aspectos que no sea el contenido.
 
-Jekyll also offers powerful support for code snippets:
+Si estás leyendo esto y no conoces sobre que escribo, entonces te doy la
+bienvenida y te cuento que me gusta compartir conocimiento, opiniones, tutoriales
+sobre **Linux, programación, AI, teclados y técnología** en general.
 
-{% highlight c %}
-// Simple C program to display "Hello World"
+Si me ya me conocés, entonces ¡gracias por el aguante!
 
-// Header file for input output functions
-#include <stdio.h>
 
-// Main function: entry point for execution
-int main() {
-
-    // writing print statement to print hello world
-    printf("Hello World");
-
-    return 0;
-
-}
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[jekyllrb]: https://jekyllrb.com/
+[ghpages]: https://pages.github.com
