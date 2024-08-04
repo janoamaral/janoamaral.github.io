@@ -24,7 +24,7 @@ layout: default
         <small class="date">{{post.date | date: "%B %d, %Y"}}</small>
         <h2>{{post.title}}</h2>
         <p>
-          {{post.excerpt | truncate: 450}}
+          {{post.excerpt | truncatewords: 40 | truncate: 450}}
         </p>
         <div class="more">Leer más</div>
       </div>
