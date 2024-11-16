@@ -8,14 +8,30 @@
   </head>
 
   <body>
-    <nav>
-      <ul class="container">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">Acerca</a></li>
-      </ul>
-    </nav>
-    <main class="container">
-      <section>{{ content }}</section>
-    </main>
+    <div class="bg-background min-h-screen">
+      <div class="container max-w-screen-lg mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <aside class="md:col-span-1 flex flex-col">
+            {% include about.html %}
+            <!-- {/* Profile Section */} -->
+            <!-- < Profile /> -->
+            <!-- {/* Skills Section */} -->
+            <!-- <Skills /> -->
+          </aside>
+          <!-- {/* (Profile and Skills) Sidebar Section */} -->
+          <!-- <Sidebar /> -->
+          <!-- {/* Main Section */} -->
+          <main class="md:col-span-2">
+            <!-- <section>{{ content }}</section> -->
+            <!-- {/* About Me Section */} -->
+            <!-- <AboutMe /> -->
+            <!-- {/* Projects Section */} -->
+            <!-- <Projects /> -->
+            <!-- {/* Experience Section */} -->
+            <!-- <Experience /> -->
+          </main>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

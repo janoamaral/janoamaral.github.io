@@ -32,6 +32,7 @@ github_username: janoamaral
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-postcss
 host: 0.0.0.0
 
 # Split posts over multiple subdirectories called “page2”, “page3”, … “pageN”
