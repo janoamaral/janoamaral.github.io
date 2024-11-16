@@ -35,6 +35,15 @@ plugins:
   - jekyll-postcss
 host: 0.0.0.0
 
+postcss:
+  cache: false
+
 # Split posts over multiple subdirectories called “page2”, “page3”, … “pageN”
 paginate: 10
 paginate_path: "page:num"
+
+exclude:
+  - package.json
+  - postcss.config.js
+  - tailwind.config.js
+  - yarn.lock

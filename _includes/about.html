@@ -1,36 +1,23 @@
-<div>
-  <div class="pt-6">
-    <div class="flex flex-col items-start gap-2 debug">
-      <div class="flex flex-row md:flex-col items-center md:items-start w-full gap-4">
-        <img width="150" height="150" quality="{100}" src="https://avatars.githubusercontent.com/u/10008708?v=4"
-          alt="Profile Picture" class="rounded-full size-12 md:w-full h-auto object-cover border-2" />
-        <div class="flex flex-col items-start justify-center">
-          <h1 class="font-bold md:mt-4 text-xl md:text-2xl debug">
-            Alejandro Amaral
-          </h1>
-          <p class="text-sm md:text-base text-muted-foreground">
-            Solopreneur Developer
-          </p>
-        </div>
-      </div>
-      <p class="mt-2 text-start text-sm text-muted-foreground">
-        I am a solopreneur developer with a passion for building products that
-        solve real-world problems.
-      </p>
-      <button class="mt-4 w-full" asChild>
-        <a target="_blank" href="/resume.pdf" class="font-semibold">
-          CONTACT ME
-        </a>
-      </button>
-      <div class="mt-4 flex flex-col space-y-2 border-t border-border pt-4 w-full">
-        <a key="{i}" href="{s.link}" target="_blank" aria-label="{`${s.name}" Logo`}
-          class="cursor-pointer flex items-center gap-2 group">
-          {s.icon}
-          <p class="text-sm text-muted-foreground group-hover:text-primary transition-color duration-200 ease-linear">
-            /{username}
-          </p>
-        </a>
+<div class="p-4 rounded-md">
+  <div class="pt-2">
+    <div class="flex flex-row gap-4 items-center">
+      <img src="https://avatars.githubusercontent.com/u/10008708?v=4"
+        class="w-16 rounded-full border-2 border-slate-800 m-0 p-0" alt="avatar" />
+      <div>
+        <h1 class="font-semibold text-xl">Alejandro Amaral</h1>
+        <h2 class="text-slate-500">System Analyst</h1>
       </div>
     </div>
+  </div>
+  <div class="mt-6">
+    <p class="text-sm text-slate-500">
+      Hola, soy Alejandro (aka Jano), analista de sistemas con más de 13 años de experiencia
+      poniendo productos digitales en producción.
+    </p>
+  </div>
+  <div class="mt-6">
+    <a href="contact.html" class="bg-slate-950 w-full block text-center p-2
+    rounded-md text-slate-50 uppercase font-bold text-sm dark:bg-slate-200
+    dark:text-slate-900">Contacto</a>
   </div>
 </div>
