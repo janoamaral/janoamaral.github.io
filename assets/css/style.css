@@ -8,3 +8,9 @@
 .debug {
   border: 1px dashed magenta !important;
 }
+
+@media (prefers-color-scheme: dark) {
+  .icon {
+    filter: invert(70%);
+  }
+}
