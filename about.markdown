@@ -19,40 +19,46 @@ musical muy ecléctico: desde la música clásica hasta el K/J-Pop y todo lo dem
 Consciente de la naturaleza: no tengo auto y prefiero caminar/andar en bicicleta,
 evito los plásticos siempre que puedo.
 
-
 ## Actividad
 
 <iframe class="w-full rounded-md mb-8" frameBorder="0" height="163px" width="710px" src="https://git-graph.vercel.app/embed/janoamaral?showColorLegend=true&showWeekdayLabels=false&showMonthLabels=true&showTotalCount=true&blockMargin=3&blockRadius=2&blockSize=10&fontSize=14&weekStart=4&year=2024"></iframe>
 
-<div class="text-center mb-8">
-    <img class="w-full mb-4" style="max-width: 30rem" src="https://github-readme-stats.vercel.app/api?username=janoamaral&show_icons=true&theme=dark#gh-dark-mode-only&rank_icon=github"/>
-    <img class="w-full mb-4" style="max-width: 30rem" src="https://github-readme-stats.vercel.app/api/wakatime?username=logico&theme=dark"/>
-    <img class="w-full" style="max-width: 30rem" src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=janoamaral&layout=donut&theme=dark#gh-dark-mode-only"/>
+<div class="flex gap-4 flex-row w-full mb-8">
+    <div class="flex gap-4 flex-col w-full">
+        <img class="w-full" src="https://github-readme-stats.vercel.app/api?username=janoamaral&show_icons=true&theme=dark#gh-dark-mode-only&rank_icon=github"/>
+        <img class="w-full" src="https://github-readme-stats.vercel.app/api/top-langs/?username=janoamaral&layout=donut&theme=dark#gh-dark-mode-only"/>
+    </div>
+    <div class="flex gap-4 flex-col w-full">
+        <img class="w-full" src="https://github-readme-stats.vercel.app/api/wakatime?username=logico&theme=dark"/>
+    </div>
 </div>
 
 ## Top repos
 
-<div class="flex flex-col gap-4 md:flex-row">
-    <div class="flex flex-col gap-4">
+<div class="flex gap-4 md:flex-row w-full">
+    <div class="flex flex-col gap-4 w-full">
         <a href="https://github.com/janoamaral/tokyo-night-tmux" target="_blank">
             <img class="w-full" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=janoamaral&repo=tokyo-night-tmux&theme=dark"/>
         </a>
-        <a href="https://github.com/janoamaral/tokyo-night-tmux" target="_blank">
+        <a href="https://github.com/logico/typewriter" target="_blank">
             <img class="w-full" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=logico&repo=typewriter&theme=dark"/>
         </a>
-        <a href="https://github.com/janoamaral/tokyo-night-tmux" target="_blank">
+        <a href="https://github.com/logico/lazy-youtube-embed" target="_blank">
             <img class="w-full" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=logico&repo=lazy-youtube-embed&theme=dark"/>
         </a>
     </div>
-    <div class="flex flex-col gap-4">
-        <a href="https://github.com/janoamaral/tokyo-night-tmux" target="_blank">
+    <div class="flex flex-col gap-4 w-full">
+        <a href="https://github.com/logico/vestacp-nodejs" target="_blank">
             <img class="w-full" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=logico&repo=vestacp-nodejs&theme=dark"/>
         </a>
-        <a href="https://github.com/janoamaral/tokyo-night-tmux" target="_blank">
+        <a href="https://github.com/janoamaral/Xresources-themes" target="_blank">
             <img class="w-full" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=janoamaral&repo=Xresources-themes&theme=dark"/>
         </a>
-        <a href="https://github.com/janoamaral/tokyo-night-tmux" target="_blank">
+        <a href="https://github.com/logico/typewriter-vim" target="_blank">
             <img class="w-full" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=logico&repo=typewriter-vim&theme=dark"/>
+        </a>
+        <a href="https://github.com/logico/AfipCert" target="_blank">
+            <img class="w-full" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=logico&repo=AfipCert&theme=dark"/>
         </a>
     </div>
 </div>
