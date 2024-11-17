@@ -1,32 +1,43 @@
 ---
 layout: default
 ---
+<section class="pb-8 border rounded-md border-slate-300 dark:border-slate-800 p-8 mb-8">
+  <h2 class="font-bold text-3xl mb-4">Sobre mi</h2>
+  <p class="mb-4">
+  Soy un analista de sistemas ubicado en Bolívar, 
+  una hermosa ciudad pequeña en Buenos Aires, Argentina. 
+  Me especializo en ayudar a equipos y clientes a construir 
+  productos desde cero. En mis más de 15 años de carrera, 
+  he adquirido una sólida experiencia trabajando con presupuestos ajustados, 
+  construyendo infraestructura, DevOps, programando tanto el backend 
+  como el frontend, y también interactuando con clientes y usuarios finales.
+  </p>
+  <p>
+  Pero no todo en mí es trabajo: soy un minimalista de corazón, amante del 
+  código abierto y mal jugador de armónica. Disfruto cocinando para mi familia 
+  y amigos, siendo las pastas italianas mi fuerte. Lector ávido y con un gusto 
+  musical muy ecléctico: desde la música clásica hasta el K/J-Pop y todo lo demás. 
+  Consciente de la naturaleza: no tengo auto y prefiero caminar/andar en bicicleta, 
+  evito los plásticos siempre que puedo.
+  </p>
+</section>
 
-<header class="flex-col align-center text-center masthead">
-  <div clas="container text-red">
-    <img class="rounded-full avatar" src="https://avatars.githubusercontent.com/u/10008708?v=4" />
-    <h1 class="text-red font-mono">
-      Alejandro Amaral
-    </h1>
-  </div>
-  <div>
-    <p>
-    Hola, soy Alejandro (aka Jano), analista de sistemas con más de 13 años de experiencia 
-    poniendo productos digitales en producción.
-    </p>
-  </div>
-</header>
-
-<section>
+<h2 class="font-bold text-2xl mb-4">Blog</h2>
+<section class="pb-16 border-b md:border-b-0 dark:border-b-slate-700">
   {% for post in site.posts limit:5 %}
-    <a class="post-card"href={{post.url}}>
-      <div style="padding:0 1rem">
-        <small class="date">{{post.date | date: "%B %d, %Y"}}</small>
-        <h2>{{post.title}}</h2>
-        <p>
+    <a class="p-4 block border rounded-md border-slate-300
+  dark:border-slate-800 overflow-hidden shadow-lg" href={{post.url}}>
+      <div class="p-4">
+        <small class="text-sm font-mono block">
+          {{post.date | date: "%B %d, %Y"}}
+        </small>
+        <h2 class="font-semibold text-2xl mb-2">
+          {{post.title}}
+        </h2>
+        <p class="mt-4 text-slate-50">
           {{post.excerpt | truncatewords: 40 | truncate: 450}}
         </p>
-        <div class="more">Leer más</div>
+        <span class="font-bold text-base mt-4 block">Leer más</span>
       </div>
     </a>
   {% endfor %}

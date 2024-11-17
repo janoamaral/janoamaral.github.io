@@ -4,16 +4,55 @@ title: Acerca de mi
 permalink: /about/
 ---
 
-I'm a systems analyst based in Bolívar, a beautiful small city
-in Buenos Aires - Argentina. I specialise in help teams and
-clients to build products from the ground up. In 13+ years of
-freelancing career I hard-earned experience working with low
-budgets, building infraestructure, DevOps, coding back and
-frontend and also dealing with clients and end users.
+Soy un analista de sistemas ubicado en Bolívar,
+una hermosa ciudad pequeña en Buenos Aires, Argentina.
+Me especializo en ayudar a equipos y clientes a construir
+productos desde cero. En mis más de 15 años de carrera,
+he adquirido una sólida experiencia trabajando con presupuestos ajustados,
+construyendo infraestructura, DevOps, programando tanto el backend
+como el frontend, y también interactuando con clientes y usuarios finales.
 
-But not everything in me is about job: I'm a minimalist at
-heart, open source lover and bad harmonica player. I enjoy
-cooking for my family and friends, being italian pastas my
-forte. Avid reader and with a very ecletic taste in music: from classical music to
-K/J-Pop and everything in between. Nature conscious: I don't own
-a car and prefer walk / cycling, avoid plastics everytime I can.
+Pero no todo en mí es trabajo: soy un minimalista de corazón, amante del
+código abierto y mal jugador de armónica. Disfruto cocinando para mi familia
+y amigos, siendo las pastas italianas mi fuerte. Lector ávido y con un gusto
+musical muy ecléctico: desde la música clásica hasta el K/J-Pop y todo lo demás.
+Consciente de la naturaleza: no tengo auto y prefiero caminar/andar en bicicleta,
+evito los plásticos siempre que puedo.
+
+
+## Actividad
+
+<iframe class="w-full rounded-md mb-8" frameBorder="0" height="163px" width="710px" src="https://git-graph.vercel.app/embed/janoamaral?showColorLegend=true&showWeekdayLabels=false&showMonthLabels=true&showTotalCount=true&blockMargin=3&blockRadius=2&blockSize=10&fontSize=14&weekStart=4&year=2024"></iframe>
+
+<div class="text-center mb-8">
+    <img class="w-full mb-4" style="max-width: 30rem" src="https://github-readme-stats.vercel.app/api?username=janoamaral&show_icons=true&theme=dark#gh-dark-mode-only&rank_icon=github"/>
+    <img class="w-full mb-4" style="max-width: 30rem" src="https://github-readme-stats.vercel.app/api/wakatime?username=logico&theme=dark"/>
+    <img class="w-full" style="max-width: 30rem" src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=janoamaral&layout=donut&theme=dark#gh-dark-mode-only"/>
+</div>
+
+## Top repos
+
+<div class="flex flex-col gap-4 md:flex-row">
+    <div class="flex flex-col gap-4">
+        <a href="https://github.com/janoamaral/tokyo-night-tmux" target="_blank">
+            <img class="w-full" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=janoamaral&repo=tokyo-night-tmux&theme=dark"/>
+        </a>
+        <a href="https://github.com/janoamaral/tokyo-night-tmux" target="_blank">
+            <img class="w-full" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=logico&repo=typewriter&theme=dark"/>
+        </a>
+        <a href="https://github.com/janoamaral/tokyo-night-tmux" target="_blank">
+            <img class="w-full" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=logico&repo=lazy-youtube-embed&theme=dark"/>
+        </a>
+    </div>
+    <div class="flex flex-col gap-4">
+        <a href="https://github.com/janoamaral/tokyo-night-tmux" target="_blank">
+            <img class="w-full" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=logico&repo=vestacp-nodejs&theme=dark"/>
+        </a>
+        <a href="https://github.com/janoamaral/tokyo-night-tmux" target="_blank">
+            <img class="w-full" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=janoamaral&repo=Xresources-themes&theme=dark"/>
+        </a>
+        <a href="https://github.com/janoamaral/tokyo-night-tmux" target="_blank">
+            <img class="w-full" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=logico&repo=typewriter-vim&theme=dark"/>
+        </a>
+    </div>
+</div>
