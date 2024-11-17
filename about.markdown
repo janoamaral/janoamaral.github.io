@@ -13,7 +13,7 @@ construyendo infraestructura, DevOps, programando tanto el backend
 como el frontend, y también interactuando con clientes y usuarios finales.
 
 Pero no todo en mí es trabajo: soy un minimalista de corazón, amante del
-código abierto y mal jugador de armónica. Disfruto cocinando para mi familia
+código abierto y tratando de aprender a tocar la armónica. Disfruto cocinando para mi familia
 y amigos, siendo las pastas italianas mi fuerte. Lector ávido y con un gusto
 musical muy ecléctico: desde la música clásica hasta el K/J-Pop y todo lo demás.
 Consciente de la naturaleza: no tengo auto y prefiero caminar/andar en bicicleta,
