@@ -2,40 +2,9 @@
 layout: default
 ---
 
-<header class="flex-col align-center text-center masthead">
-  <div>
-    <img
-      class="rounded-full avatar"
-      style="width: 60px; height: 60px"
-      src="https://avatars.githubusercontent.com/u/10008708?v=4"
-    />
-    <h1 style="font-size: 1.4rem; margin-top: 0.6rem">Alejandro Amaral</h1>
-  </div>
-</header>
+<div class="post p-6">
+  <small class="text-center block">{{page.date | date: "%B %d, %Y"}}</small>
+  <h1 class="font-bold text-4xl mb-4 text-center">{{ page.title}}</h1>
 
-<div class="post">
-  <small class="date">{{page.date | date: "%B %d, %Y"}}</small>
-  <h1>{{ page.title}}</h1>
-
-  <article>{{content}}</article>
+  <article class="mt-8 article">{{content}}</article>
 </div>
-
-<footer>
-  <header class="flex-col align-center text-center masthead">
-    <div>
-      <h4
-        style="
-          margin-bottom: 0.5rem;
-          font-weight: 400;
-          text-transform: uppercase;
-        "
-      >
-        Acerca de Alejandro Amaral
-      </h4>
-      <p>
-        Analista de sistemas con más de 13 años de experiencia poniendo
-        productos digitales en producción.
-      </p>
-    </div>
-  </header>
-</footer>
