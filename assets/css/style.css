@@ -537,6 +537,14 @@
   overflow-wrap: break-word;
 }
 
+.show-light {
+  display: flex !important;
+}
+
+.show-dark {
+  display: none !important;
+}
+
 @media (prefers-color-scheme: dark) {
   .icon {
     filter: invert(70%);
@@ -550,4 +558,13 @@
   .article h6 {
     border-bottom: 1px solid #1e293b;
   }
+
+  .show-light {
+    display: none !important;
+  }
+
+  .show-dark {
+    display: flex !important;
+  }
 }
+
