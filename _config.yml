@@ -37,6 +37,8 @@ plugins:
   - jekyll-postcss
   - premonition
   - jekyll-octicons
+  - jekyll-toc
+
 host: 0.0.0.0
 
 postcss:
@@ -65,3 +67,7 @@ premonition:
       default_title: "MY BLOCK"
       meta:
         my-meta: "By myself"
+
+toc:
+  min_level: 1
+  max_level: 2

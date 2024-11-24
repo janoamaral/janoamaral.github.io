@@ -2,6 +2,7 @@
 layout: post
 title: Acerca de mi
 permalink: /about/
+toc: false
 ---
 
 Soy un analista de sistemas ubicado en Bolívar,

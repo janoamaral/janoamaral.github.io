@@ -2,19 +2,28 @@
 layout: default
 ---
 
-<div class="post py-6">
-  <small class="">
-    {{page.date | date: "%B %d, %Y"}}
-  </small>
+<div class="flex flex-row py-6">
+      <div class="post {% if page.toc == true %}w-9/12{% else %}w-full{% endif %}">
+        <small class="">
+          {{page.date | date: "%B %d, %Y"}}
+        </small>
+        <h1 class="font-semibold text-4xl mt-2 mb-4">
+          {{ page.title}}
+        </h1>
+      <article class="article">
+        <p class="text-slate-500 text-2xl">
+          {{ page.intro}}
+        </p>
+        {{content}}
+      </article>
+    </div>
 
-  <h1 class="font-semibold text-4xl mb-2 mt-2">
-    {{ page.title}}
-  </h1>
-  <p class="text-slate-500 text-2xl">
-    {{ page.intro}}
-  </p>
-
-  <article class="mt-8 article">
-    {{content}}
-  </article>
+    {% if page.toc == true %}
+      <div class="w-3/12 text-sm pl-10">
+        <div class="pt-4 sticky top-20">
+        <h5 class="font-bold mb-4">En este artículo</h5>
+          {% toc %}
+        </div>
+      </div>
+    {% endif %}
 </div>

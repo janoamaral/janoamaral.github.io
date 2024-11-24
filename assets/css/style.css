@@ -659,3 +659,7 @@
 .article .premonition.important>.content {
   border-left-color: rgb(171, 125, 248);
 }
+
+#toc li {
+  margin-bottom: .5rem;
+}

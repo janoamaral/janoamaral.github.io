@@ -1,9 +1,13 @@
 ---
 layout: post
 title: "Volviendo a lo básico"
+intro: En el centro de GitHub hay un sistema de control de versiones (VCS) de código abierto denominado Git. Git es responsable de todo lo relacionado con GitHub que ocurra localmente en el equipo.
 date: 2024-08-01 20:29:02 -0300
 categories: general
+toc: true
 ---
+
+## Keep It Simple Stupid
 
 Y vamos pegando la vuelta. Esta es la tercera vez que pongo un blog
 personal en línea. Y el quinto intento de diseño... Después de probar Next,
