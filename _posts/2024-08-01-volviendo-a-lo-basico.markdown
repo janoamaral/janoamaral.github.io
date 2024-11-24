@@ -39,6 +39,9 @@ sobre **Linux, programación, AI, teclados y tecnología** en general.
 
 Si ya me conocés, entonces ¡gracias por el aguante!
 
+> normal quote
+> Highlights information that users should take into account, even when skimming.
+
 > note "Note"
 > Highlights information that users should take into account, even when skimming.
 
@@ -51,7 +54,7 @@ Si ya me conocés, entonces ¡gracias por el aguante!
 > error "Error"
 > Negative potential consequences of an action.
 
-> [!IMPORTANT]  
+> important "Important"
 > Crucial information necessary for users to succeed.
 
 [jekyllrb]: https://jekyllrb.com/
