@@ -1,5 +1,6 @@
----
 --- 
+--- 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -501,6 +502,7 @@
   list-style-type: disc;
   padding-left: 2rem;
 }
+
 .article ul ul {
   list-style-type: circle;
 }
@@ -515,7 +517,8 @@
 }
 
 .article blockquote {
-  border-left: 4px solid rgb(47, 129, 247);
+  border-left: 4px solid #2a313c;
+  color: #9198a1;
   padding: 1rem;
   margin: 2rem 0;
 }
@@ -568,3 +571,91 @@
   }
 }
 
+.article .premonition>.content {
+  border-left: 3px solid rgb(47, 129, 247);
+  padding: 0.5rem 1.2rem;
+  margin: 2rem 0;
+  font-size: 0.9rem;
+}
+
+.article .premonition>.content>p {
+  margin: 0rem;
+}
+
+.article .premonition>.content>.header {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.article .premonition.note>.content>.header {
+  color: rgb(68, 147, 248);
+}
+
+.article .premonition >.content>.header:before {
+  margin-right: 0.5rem;
+  display: inline-block;
+  transform: translateY(0.1rem);
+}
+
+.article .premonition.note>.content>.header:before {
+  content: url('../images/info.svg');
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.article .premonition.note>.content {
+  border-left-color: rgb(47, 129, 247);
+}
+
+.article .premonition.info>.content>.header:before {
+  content: url('../images/light-bulb.svg');
+  filter: invert(0.5) sepia(1) saturate(3) hue-rotate(95deg);
+}
+.article .premonition.info>.content {
+  border-left-color: rgb(35, 134, 54);
+}
+
+.article .premonition.info>.content>.header {
+  color: rgb(63, 185, 80);
+}
+
+.article .premonition.info>.content {
+  border-left-color: rgb(35, 134, 54);
+}
+
+
+.article .premonition.warning>.content>.header:before {
+  content: url('../images/alert.svg');
+  filter: invert(0.5) sepia(1) saturate(3) hue-rotate(0deg);
+}
+.article .premonition.warning>.content>.header {
+  color: rgb(210, 153, 34);
+}
+
+.article .premonition.warning>.content {
+  border-left-color: rgb(210, 153, 34);
+}
+
+.article .premonition.error>.content>.header:before {
+  content: url('../images/stop.svg');
+  filter: invert(0.5) sepia(1) saturate(30) hue-rotate(330deg);
+}
+.article .premonition.error>.content {
+  border-left-color: rgb(248, 81, 73);
+}
+
+.article .premonition.error>.content>.header {
+  color: rgb(248, 81, 73);
+}
+
+
+.article .premonition.important>.content>.header:before {
+  content: url('../images/report.svg');
+  filter: invert(0.5) sepia(1) saturate(2) hue-rotate(220deg);
+}
+.article .premonition.important>.content>.header {
+  color: rgb(171, 125, 248);
+}
+
+.article .premonition.important>.content {
+  border-left-color: rgb(171, 125, 248);
+}
