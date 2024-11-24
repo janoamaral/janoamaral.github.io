@@ -39,6 +39,21 @@ sobre **Linux, programación, AI, teclados y tecnología** en general.
 
 Si ya me conocés, entonces ¡gracias por el aguante!
 
+> note "Note"
+> Highlights information that users should take into account, even when skimming.
+
+> info "Info"
+> Optional information to help a user be more successful.
+
+> warning "Note"
+> Critical content demanding immediate user attention due to potential risks.
+
+> error "Error"
+> Negative potential consequences of an action.
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
 [jekyllrb]: https://jekyllrb.com/
 [ghpages]: https://pages.github.com
 [pocketbase]: https://pocketbase.io/
