@@ -19,6 +19,7 @@ group :jekyll_plugins do
   gem "jekyll-postcss"
   gem "premonition", "4.0.1"
   gem 'jekyll-octicons'
+  gem 'jekyll-toc'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
