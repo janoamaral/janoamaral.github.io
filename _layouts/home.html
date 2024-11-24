@@ -28,13 +28,13 @@ layout: default
     <a class="p-4 block border rounded-md border-slate-300
   dark:border-slate-800 overflow-hidden shadow-lg mb-4" href={{post.url}}>
       <div class="p-4">
-        <small class="text-sm font-mono block">
+        <small class="text-xs mb-2 block uppercase font-bold">
           {{post.date | date: "%B %d, %Y"}}
         </small>
         <h2 class="font-semibold text-2xl mb-2">
           {{post.title}}
         </h2>
-        <p class="mt-4 text-slate-50">
+        <p class="mt-4 text-slate-500">
           {{post.intro | truncatewords: 40 | truncate: 450}}
         </p>
         <span class="font-bold text-base mt-4 block">Leer más</span>
