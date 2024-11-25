@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "Volviendo a lo básico"
-intro: 'Después de varios años de crear blogs en diferentes tecnologías decidí volver al primer amor: Jekyll y GitHub pages.'
-date: 2024-08-01 20:29:02 -0300
-categories: general
+title: "Más allá del código: programar por placer"
+intro: 'Programar por el hecho de programar no solo mejora nuestras habilidades técnicas, sino que también reaviva la llama que nos llevó a elegir esta profesión en primer lugar.'
+date: 2024-11-24 20:29:02 -0300
 toc: true
 ---
 
