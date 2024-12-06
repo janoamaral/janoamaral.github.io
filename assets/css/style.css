@@ -660,6 +660,14 @@
   border-left-color: rgb(171, 125, 248);
 }
 
+.article img {
+  width: 100%;
+  border-radius: 28px;
+  overflow-y: auto;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
 #toc li {
   margin-bottom: .5rem;
 }
