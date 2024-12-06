@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 'Data processing primero, shell después: Nushell'
+title: "Data processing primero, shell después: Nushell"
 intro: 'Hace un par de años me enteré de esta herramienta que sinceramente no
 logró cautivarme cómo para reemplazar mi Zsh. No fue sino hasta
 ayer nomás que finalmente entendí su verdadero poder: data processing'
 date: 2024-12-05 20:29:02 -0300
-categories: general
+categories: cli
 toc: true
 ---
 
