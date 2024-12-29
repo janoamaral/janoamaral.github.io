@@ -42,7 +42,13 @@ sudo apt install libgtk-4-dev libadwaita-1-dev git
 
 ## Instalación
 
-## Instalación
+## Demo y configuración
 
-<a href="https://youtu.be/7Jon_cAK_to" class="lazy-youtube-embed">Ghostyy
-Overview</a>
+Dejo algunos videos para ver de que se trata esta nueva terminal y cómo
+configurarla.
+
+<a href="https://youtu.be/7Jon_cAK_to" class="lazy-youtube-embed">Ghostty Overview</a>
+
+Instalación en Arch Linux y configuración
+
+<a href="https://youtu.be/RGlj4dcdWgM" class="lazy-youtube-embed">Ghostty Install and Config</a>
