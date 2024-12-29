@@ -17,7 +17,7 @@ toc: true
 
 > warning "Zig 0.13"
 > Hay que usar la versión exacta 0.13 de Zig porque de lo contrario va a fallar
-> la compilación. 
+> la compilación.
 
 [Descargar Zig = 0.13](https://ziglang.org/download/)
 
@@ -32,8 +32,17 @@ mv zig-linux-x86_64-0.14.0-dev.2569+30169d1d2.tar.xz ~/dev/jsr/zig/src
 ln -s "$HOME/dev/jsr/zig/src/zig" ~/.local/bin/zig
 ```
 
-[Instalar las dependencias](https://ghostty.org/docs/install/build#linux-installation-tips)
+[requisitos para otras distros](https://ghostty.org/docs/install/build#linux-installation-tips)
 
 ```bash
 sudo apt install libgtk-4-dev libadwaita-1-dev git
 ```
+
+## Compilación
+
+## Instalación
+
+## Instalación
+
+<a href="https://youtu.be/7Jon_cAK_to" class="lazy-youtube-embed">Ghostyy
+Overview</a>
