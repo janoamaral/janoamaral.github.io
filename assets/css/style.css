@@ -704,3 +704,8 @@
 .lazy-youtube-embed iframe {
   border-radius: 8px;
 }
+
+video {
+    height: auto;
+    border-radius: 8px;
+}
