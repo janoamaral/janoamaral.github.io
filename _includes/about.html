@@ -11,14 +11,19 @@
   </div>
   <div class="mt-6">
     <p class="text-md text-slate-700 dark:text-slate-400">
+      {% if page.lang == 'en' %}
+      Hi, I'm Alejandro (aka Jano), a systems analyst with more than 15 years of
+      experience shipping digital products.
+      {% else %}
       Hola, soy Alejandro (aka Jano), analista de sistemas con más de 15 años de experiencia
       poniendo productos digitales en producción.
+      {% endif %}
     </p>
   </div>
   <div class="mt-6">
-    <a href="/about" class="bg-slate-450 w-full block text-center p-2
+    <a href="{% if page.lang == 'en' %}/en/about/{% else %}/about{% endif %}" class="bg-slate-450 w-full block text-center p-2
     rounded-md text-slate-950 font-semibold border border-slate-300 text-sm dark:bg-slate-900
-    dark:text-slate-100 dark:border-slate-500">Contacto</a>
+    dark:text-slate-100 dark:border-slate-500">{% if page.lang == 'en' %}Contact{% else %}Contacto{% endif %}</a>
   </div>
   <div class="mt-6">
     <ul>

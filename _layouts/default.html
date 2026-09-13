@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="{{ page.lang | default: 'es' }}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -38,13 +38,19 @@
               border-b-slate-300 dark:border-b-slate-800 -mt-4">
               <ul class="flex gap-8 justify-center md:justify-normal flex-row-reverse md:flex-row">
                 <li>
-                  <a href="/" class="text-slate-700 font-bold
+                  <a href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}" class="text-slate-700 font-bold
                     dark:text-slate-200 px-4 py-4">Home</a>
                 </li>
                 <li>
-                  <a href="/about" class="text-slate-700 font-bold
-                    dark:text-slate-200 px-4 py-4">Acerca</a>
+                  <a href="{% if page.lang == 'en' %}/en/about/{% else %}/about{% endif %}" class="text-slate-700 font-bold
+                    dark:text-slate-200 px-4 py-4">{% if page.lang == 'en' %}About{% else %}Acerca{% endif %}</a>
                 </li>
+                {% if page.translation %}
+                <li>
+                  <a href="{{ page.translation | relative_url }}" class="text-slate-700 font-bold
+                    dark:text-slate-200 px-4 py-4">{% if page.lang == 'en' %}ES{% else %}EN{% endif %}</a>
+                </li>
+                {% endif %}
               </ul>
             </nav>
             <div class="pt-8">

@@ -18,6 +18,14 @@
 
 <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
+{% if page.translation %}
+  {% assign mylang = page.lang | default: 'es' %}
+  {% assign tlang = 'en' %}
+  {% if mylang == 'en' %}{% assign tlang = 'es' %}{% endif %}
+  <link rel="alternate" hreflang="{{ mylang }}" href="{{ site.url }}{{ page.url }}" />
+  <link rel="alternate" hreflang="{{ tlang }}" href="{{ site.url }}{{ page.translation | relative_url }}" />
+{% endif %}
+
 <meta itemprop="name" content="{{ page.title }}" />
 <meta
   itemprop="image"

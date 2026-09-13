@@ -2,7 +2,25 @@
 layout: default
 ---
 <section class="pb-8 border rounded-md border-slate-300 dark:border-slate-800 p-8 mb-8">
-  <h2 class="font-bold text-3xl mb-4">Sobre mi</h2>
+  <h2 class="font-bold text-3xl mb-4">{% if page.lang == 'en' %}About me{% else %}Sobre mi{% endif %}</h2>
+  {% if page.lang == 'en' %}
+  <p class="mb-4">
+  I'm a systems analyst located in Bolívar, a beautiful small city in
+  Buenos Aires, Argentina. I specialize in helping teams and clients build
+  products from scratch. Over my more than 15 years of career, I've gained
+  solid experience working on tight budgets, building infrastructure, doing
+  DevOps, programming both backend and frontend, and also interacting with
+  clients and end users.
+  </p>
+  <p>
+  But not everything about me is work: I'm a minimalist at heart, an open
+  source lover and a bad harmonica player. I enjoy cooking for my family and
+  friends, Italian pasta being my forte. An avid reader with very eclectic
+  taste in music: from classical music to K/J-Pop and everything in between.
+  Nature-conscious: I don't own a car and prefer walking/cycling, and I avoid
+  plastics whenever I can.
+  </p>
+  {% else %}
   <p class="mb-4">
   Soy un analista de sistemas ubicado en Bolívar, 
   una hermosa ciudad pequeña en Buenos Aires, Argentina. 
@@ -20,11 +38,17 @@ layout: default
   Consciente de la naturaleza: no tengo auto y prefiero caminar/andar en bicicleta, 
   evito los plásticos siempre que puedo.
   </p>
+  {% endif %}
 </section>
 
 <h2 class="font-bold text-2xl mb-4">Blog</h2>
 <section class="pb-16 border-b md:border-b-0 dark:border-b-slate-700">
-  {% for post in site.posts limit:5 %}
+  {% if page.lang == 'en' %}
+    {% assign posts = site.posts | where: "lang", "en" %}
+  {% else %}
+    {% assign posts = site.posts | where_exp: "post", "post.lang != 'en'" %}
+  {% endif %}
+  {% for post in posts limit:5 %}
     <a class="p-4 block border rounded-md border-slate-300
   dark:border-slate-800 overflow-hidden shadow-lg mb-4" href={{post.url}}>
       <div class="p-4">
@@ -37,7 +61,7 @@ layout: default
         <p class="mt-4 text-slate-500">
           {{post.intro | truncatewords: 40 | truncate: 450}}
         </p>
-        <span class="font-bold text-base mt-4 block">Leer más</span>
+        <span class="font-bold text-base mt-4 block">{% if page.lang == 'en' %}Read more{% else %}Leer más{% endif %}</span>
       </div>
     </a>
   {% endfor %}

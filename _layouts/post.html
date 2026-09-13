@@ -25,7 +25,7 @@ layout: default
 
         {% if page.toc == true %}
           <div class="block md:hidden text-sm py-8 mb-8 pl-4 border-b border-b-slate-600">
-            <h5 class="font-bold mb-4">En este artículo</h5>
+            <h5 class="font-bold mb-4">{% if page.lang == 'en' %}In this article{% else %}En este artículo{% endif %}</h5>
               {% toc %}
           </div>
         {% endif %}
@@ -38,7 +38,7 @@ layout: default
     {% if page.toc == true %}
       <div class="hidden md:block md:w-3/12 text-sm pl-10">
         <div class="pt-4 sticky top-20">
-        <h5 class="font-bold mb-4">En este artículo</h5>
+        <h5 class="font-bold mb-4">{% if page.lang == 'en' %}In this article{% else %}En este artículo{% endif %}</h5>
           {% toc %}
         </div>
       </div>

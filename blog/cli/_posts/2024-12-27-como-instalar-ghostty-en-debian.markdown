@@ -1,5 +1,7 @@
 ---
 layout: post
+lang: es
+translation: /en/blog/cli/2024/12/27/building-ghostty-on-debian.html
 title: "Compilar Ghostty en Debian"
 intro: 'Ghostty es un nuevo terminal emulator escrito en Zig que fue lanzado
 hace días nomás. Ya sea porque te gusta compilar los programas cómo yo o querés probarlo ya en tu
