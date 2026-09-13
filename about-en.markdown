@@ -1,28 +1,28 @@
 ---
 layout: post
-lang: es
-translation: /en/about/
-title: Acerca de mi
-permalink: /about/
+lang: en
+title: About me
+permalink: /en/about/
+translation: /about/
 toc: false
 ---
 
-Soy un analista de sistemas ubicado en Bolívar,
-una hermosa ciudad pequeña en Buenos Aires, Argentina.
-Me especializo en ayudar a equipos y clientes a construir
-productos desde cero. En mis más de 15 años de carrera,
-he adquirido una sólida experiencia trabajando con presupuestos ajustados,
-construyendo infraestructura, DevOps, programando tanto el backend
-como el frontend, y también interactuando con clientes y usuarios finales.
+I'm a systems analyst located in Bolívar,
+a beautiful small city in Buenos Aires, Argentina.
+I specialize in helping teams and clients build
+products from scratch. Over my more than 15 years of career,
+I've gained solid experience working on tight budgets,
+building infrastructure, doing DevOps, programming both backend
+and frontend, and also interacting with clients and end users.
 
-Pero no todo en mí es trabajo: soy un minimalista de corazón, amante del
-código abierto y tratando de aprender a tocar la armónica. Disfruto cocinando para mi familia
-y amigos, siendo las pastas italianas mi fuerte. Lector ávido y con un gusto
-musical muy ecléctico: desde la música clásica hasta el K/J-Pop y todo lo demás.
-Consciente de la naturaleza: no tengo auto y prefiero caminar/andar en bicicleta,
-evito los plásticos siempre que puedo.
+But not everything about me is work: I'm a minimalist at heart, an open
+source lover and a bad harmonica player. I enjoy cooking for my family
+and friends, Italian pasta being my forte. An avid reader with a very eclectic
+taste in music: from classical music to K/J-Pop and everything in between.
+Nature-conscious: I don't own a car and prefer walking/cycling,
+and I avoid plastics whenever I can.
 
-## Actividad
+## Activity
 
 <iframe class="w-full rounded-md mb-8" frameBorder="0" height="163px" width="710px" src="https://git-graph.vercel.app/embed/janoamaral?showColorLegend=true&showWeekdayLabels=false&showMonthLabels=true&showTotalCount=true&blockMargin=3&blockRadius=2&blockSize=10&fontSize=14&weekStart=4&year=2024"></iframe>
 

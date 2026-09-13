@@ -1,5 +1,7 @@
 ---
 layout: post
+lang: es
+translation: /en/blog/general/2025/12/08/i-use-arch-btw.html
 title: "I use Arch, btw"
 intro: 'Finalmente me armé de tiempo y decidí migrar todo mi workflow a Arch. Mi experiencia de migrar a Arch Linux (y Wayland) tras 8 años en Debian.'
 date: 2025-12-08 20:29:02 -0300

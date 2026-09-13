@@ -1,5 +1,7 @@
 ---
 layout: post
+lang: es
+translation: /en/blog/general/2026/09/11/my-workstation-is-becoming-a-dumb-terminal-and-thats-a-good-thing.html
 title: "Mi workstation se está convirtiendo en una terminal boba, y eso es algo bueno"
 intro: 'Nueva era, viejas maneras de trabajar. Con la IA, las herramientas se han vuelto más dinámicas y cada vez tiene menos sentido que nuestro entorno de desarrollo esté atado a una máquina física.'
 date: 2026-09-11 17:49:02 -0300

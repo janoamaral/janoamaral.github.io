@@ -1,5 +1,7 @@
 ---
 layout: post
+lang: es
+translation: /en/blog/cli/2024/12/05/data-processing-first-shell-after-nushell.html
 title: "Data processing primero, shell después: Nushell"
 intro: 'Hace un par de años me enteré de esta herramienta que sinceramente no
 logró cautivarme cómo para reemplazar mi Zsh. No fue sino hasta
