@@ -18,7 +18,7 @@ best local workflow and generate code in the fastest and most
 efficient way possible. I ended up building complex `tmux` and `zsh`
 configurations, with a ton of _plugins_ and _aliases_ so I would leave the
 terminal as little as possible. I switched to _Linux_ to be able to customize the
-desktop, and I even built —literally, I soldered every part— my own keyboard with
+desktop, and I even built (literally, I soldered every part) my own keyboard with
 shortcuts to depend on the mouse as little as possible and be as efficient as possible.
 
 About two months ago I realized that my _workstation_ was becoming a
@@ -38,7 +38,7 @@ included).
 
 The first need that came up was having a development environment in the
 cloud, so I could work from anywhere with any device. But
-during the research, other — perhaps secondary — needs appeared that matter to me
+during the research, other (perhaps secondary) needs appeared that matter to me
 just as much:
 
 - Being able to connect from any machine at any time (duh)
