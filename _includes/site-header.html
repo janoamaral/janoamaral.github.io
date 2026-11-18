@@ -1,0 +1,42 @@
+<header class="site-header">
+  <a class="site-brand" href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
+    Alejandro Amaral
+  </a>
+  <div class="desktop-menu">
+    <nav aria-label="{% if page.lang == 'en' %}Main navigation{% else %}Navegación principal{% endif %}">
+      <ul class="site-nav">
+        {% for item in site.data.navigation %}
+          <li><a href="{{ item.url[page.lang] | relative_url }}">{{ item.label[page.lang] }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    {% if page.translation %}
+      <a class="language-link" href="{{ page.translation | relative_url }}" hreflang="{% if page.lang == 'en' %}es{% else %}en{% endif %}">
+        {% if page.lang == 'en' %}ES{% else %}EN{% endif %}
+      </a>
+    {% endif %}
+    <a class="contact-link" href="{% if page.lang == 'en' %}{{ '/en/#contact' | relative_url }}{% else %}{{ '/#contacto' | relative_url }}{% endif %}">
+      {% if page.lang == 'en' %}Get in touch{% else %}Contactar{% endif %}
+    </a>
+  </div>
+  <details class="site-menu">
+    <summary>{% if page.lang == 'en' %}Menu{% else %}Menú{% endif %}</summary>
+    <div class="site-menu-panel">
+      <nav aria-label="{% if page.lang == 'en' %}Main navigation{% else %}Navegación principal{% endif %}">
+        <ul class="site-nav">
+          {% for item in site.data.navigation %}
+            <li><a href="{{ item.url[page.lang] | relative_url }}">{{ item.label[page.lang] }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+      {% if page.translation %}
+        <a class="language-link" href="{{ page.translation | relative_url }}" hreflang="{% if page.lang == 'en' %}es{% else %}en{% endif %}">
+          {% if page.lang == 'en' %}ES{% else %}EN{% endif %}
+        </a>
+      {% endif %}
+      <a class="contact-link" href="{% if page.lang == 'en' %}{{ '/en/#contact' | relative_url }}{% else %}{{ '/#contacto' | relative_url }}{% endif %}">
+        {% if page.lang == 'en' %}Get in touch{% else %}Contactar{% endif %}
+      </a>
+    </div>
+  </details>
+</header>

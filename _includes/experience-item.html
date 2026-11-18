@@ -1,0 +1,14 @@
+{% assign experience = include.experience %}
+{% assign heading_level = include.heading_level | default: 3 %}
+{% if experience.approved %}
+<article class="experience-item">
+  <div>
+    <div class="experience-period">{{ experience.period[page.lang] }}</div>
+    <strong>{{ experience.company }}</strong>
+  </div>
+  <div>
+    <h{{ heading_level }}>{{ experience.role[page.lang] }}</h{{ heading_level }}>
+    <p>{{ experience.summary[page.lang] }}</p>
+  </div>
+</article>
+{% endif %}

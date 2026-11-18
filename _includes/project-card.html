@@ -1,0 +1,25 @@
+{% assign project = include.project %}
+{% assign heading_level = include.heading_level | default: 3 %}
+<article class="project-card">
+  <div class="project-category">{{ project.category }}</div>
+  <h{{ heading_level }}>{{ project.name }}</h{{ heading_level }}>
+  {% if project.status == 'archived' %}
+    <div class="meta status">{% if page.lang == 'en' %}Archived{% else %}Archivado{% endif %}</div>
+  {% elsif project.status == 'grouped' %}
+    <div class="meta status">{% if page.lang == 'en' %}Grouped project{% else %}Proyecto agrupado{% endif %}</div>
+  {% endif %}
+  <p>{{ project.summary[page.lang] }}</p>
+  <ul class="project-tech" aria-label="{% if page.lang == 'en' %}Technologies{% else %}Tecnologías{% endif %}">
+    {% for technology in project.technologies %}<li>{{ technology }}</li>{% endfor %}
+  </ul>
+  {% if project.metrics %}
+    <p class="project-metrics">
+      {{ project.metrics.stars }} ★{% if project.metrics.forks != nil %} · {{ project.metrics.forks }} forks{% endif %}<br>
+      {% if page.lang == 'en' %}Observed{% else %}Observado{% endif %}: {{ project.metrics.observed_on }}
+    </p>
+  {% endif %}
+  <a href="{{ project.repository }}" rel="noopener">{% if page.lang == 'en' %}View repository{% else %}Ver repositorio{% endif %} ↗</a>
+  {% if project.related_repository %}
+    <a href="{{ project.related_repository }}" rel="noopener">Typewriter Vim ↗</a>
+  {% endif %}
+</article>

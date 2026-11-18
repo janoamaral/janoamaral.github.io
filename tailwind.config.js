@@ -3,8 +3,8 @@ module.exports = {
     './_drafts/**/*.html',
     './_includes/**/*.html',
     './_layouts/**/*.html',
-    './_posts/*.md',
-    './*.md',
+    './blog/**/_posts/*.{md,markdown}',
+    './*.{md,markdown}',
     './*.html',
   ],
   theme: {

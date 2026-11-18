@@ -1,0 +1,36 @@
+- company: Taggify
+  period:
+    es: 04/2022 — último estado confirmado
+    en: 04/2022 — last confirmed status
+  role:
+    es: Senior Software Engineer / Tech Lead
+    en: Senior Software Engineer / Tech Lead
+  summary:
+    es: Plataformas de eventos, integraciones y sistemas de producción con foco en evolución técnica y continuidad operativa.
+    en: Event platforms, integrations, and production systems focused on technical evolution and operational continuity.
+  approved: true
+  private_impact:
+    approved: false
+    notes: Performance figures, near-real-time claims, and third-party integration details require editorial approval.
+- company: Municipalidad de Bolívar
+  period:
+    es: 07/2020 — 04/2022
+    en: 07/2020 — 04/2022
+  role:
+    es: Coordinación de proyectos / responsable técnico
+    en: Project coordinator / technical lead
+  summary:
+    es: Coordinación de desarrollo y soporte para servicios y plataformas operadas sobre infraestructura local.
+    en: Development and support coordination for services and platforms running on local infrastructure.
+  approved: true
+- company: Lógico
+  period:
+    es: 01/2014 — 07/2020
+    en: 01/2014 — 07/2020
+  role:
+    es: Fundador / Full-stack Engineer
+    en: Founder / Full-stack Engineer
+  summary:
+    es: Sistemas comerciales a medida, integraciones e infraestructura para organizaciones regionales.
+    en: Custom business systems, integrations, and infrastructure for regional organizations.
+  approved: true

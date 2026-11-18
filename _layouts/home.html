@@ -1,68 +1,118 @@
 ---
 layout: default
 ---
-<section class="pb-8 border rounded-md border-slate-300 dark:border-slate-800 p-8 mb-8">
-  <h2 class="font-bold text-3xl mb-4">{% if page.lang == 'en' %}About me{% else %}Sobre mi{% endif %}</h2>
-  {% if page.lang == 'en' %}
-  <p class="mb-4">
-  I'm a systems analyst located in Bolívar, a beautiful small city in
-  Buenos Aires, Argentina. I specialize in helping teams and clients build
-  products from scratch. Over my more than 15 years of career, I've gained
-  solid experience working on tight budgets, building infrastructure, doing
-  DevOps, programming both backend and frontend, and also interacting with
-  clients and end users.
-  </p>
-  <p>
-  But not everything about me is work: I'm a minimalist at heart, an open
-  source lover and a bad harmonica player. I enjoy cooking for my family and
-  friends, Italian pasta being my forte. An avid reader with very eclectic
-  taste in music: from classical music to K/J-Pop and everything in between.
-  Nature-conscious: I don't own a car and prefer walking/cycling, and I avoid
-  plastics whenever I can.
-  </p>
-  {% else %}
-  <p class="mb-4">
-  Soy un analista de sistemas ubicado en Bolívar, 
-  una hermosa ciudad pequeña en Buenos Aires, Argentina. 
-  Me especializo en ayudar a equipos y clientes a construir 
-  productos desde cero. En mis más de 15 años de carrera, 
-  he adquirido una sólida experiencia trabajando con presupuestos ajustados, 
-  construyendo infraestructura, DevOps, programando tanto el backend 
-  como el frontend, y también interactuando con clientes y usuarios finales.
-  </p>
-  <p>
-  Pero no todo en mí es trabajo: soy un minimalista de corazón, amante del 
-  código abierto y mal jugador de armónica. Disfruto cocinando para mi familia 
-  y amigos, siendo las pastas italianas mi fuerte. Lector ávido y con un gusto 
-  musical muy ecléctico: desde la música clásica hasta el K/J-Pop y todo lo demás. 
-  Consciente de la naturaleza: no tengo auto y prefiero caminar/andar en bicicleta, 
-  evito los plásticos siempre que puedo.
-  </p>
-  {% endif %}
+{% include hero.html %}
+
+<section class="section" aria-labelledby="impact-title">
+  <div class="section-heading">
+    <div class="section-number">01 / Engineering impact</div>
+    <div>
+      <h2 id="impact-title" class="section-title">{% if page.lang == 'en' %}Real systems don't live in diagrams.{% else %}Los sistemas reales no viven en diagramas.{% endif %}</h2>
+      <p class="section-intro">{% if page.lang == 'en' %}I work on production software where latency, continuity, integration, and the ability to evolve safely matter more than architectural fashion.{% else %}Trabajo sobre software en producción donde la latencia, la continuidad, la integración y la capacidad de evolucionar con seguridad importan más que la moda arquitectónica.{% endif %}</p>
+    </div>
+  </div>
+  <div class="impact-grid">
+    <article class="impact-item">
+      <div class="meta">A / Systems</div>
+      <h3>{% if page.lang == 'en' %}Production under real constraints{% else %}Producción con restricciones reales{% endif %}</h3>
+      <p>{% if page.lang == 'en' %}Systems designed around operational continuity, measurable behavior, and maintainable change.{% else %}Sistemas diseñados alrededor de continuidad operativa, comportamiento medible y cambios mantenibles.{% endif %}</p>
+    </article>
+    <article class="impact-item">
+      <div class="meta">B / Flow</div>
+      <h3>{% if page.lang == 'en' %}Events over waiting{% else %}Eventos en lugar de espera{% endif %}</h3>
+      <p>{% if page.lang == 'en' %}Event-driven flows and clear ownership where polling and coupling limit a platform.{% else %}Flujos orientados a eventos y responsabilidades claras cuando el polling y el acoplamiento limitan una plataforma.{% endif %}</p>
+    </article>
+    <article class="impact-item">
+      <div class="meta">C / Integration</div>
+      <h3>{% if page.lang == 'en' %}Boundaries that absorb change{% else %}Límites que absorben el cambio{% endif %}</h3>
+      <p>{% if page.lang == 'en' %}Adapters and service boundaries that connect external systems without rewriting the core.{% else %}Adaptadores y límites de servicio que conectan sistemas externos sin reescribir el núcleo.{% endif %}</p>
+    </article>
+  </div>
 </section>
 
-<h2 class="font-bold text-2xl mb-4">Blog</h2>
-<section class="pb-16 border-b md:border-b-0 dark:border-b-slate-700">
-  {% if page.lang == 'en' %}
-    {% assign posts = site.posts | where: "lang", "en" %}
-  {% else %}
-    {% assign posts = site.posts | where_exp: "post", "post.lang != 'en'" %}
-  {% endif %}
-  {% for post in posts limit:5 %}
-    <a class="p-4 block border rounded-md border-slate-300
-  dark:border-slate-800 overflow-hidden shadow-lg mb-4" href={{post.url}}>
-      <div class="p-4">
-        <small class="text-xs mb-2 block uppercase font-bold">
-          {{post.date | date: "%B %d, %Y"}}
-        </small>
-        <h2 class="font-semibold text-2xl mb-2">
-          {{post.title}}
-        </h2>
-        <p class="mt-4 text-slate-500">
-          {{post.intro | truncatewords: 40 | truncate: 450}}
-        </p>
-        <span class="font-bold text-base mt-4 block">{% if page.lang == 'en' %}Read more{% else %}Leer más{% endif %}</span>
+<section class="section" id="{% if page.lang == 'en' %}projects{% else %}proyectos{% endif %}" aria-labelledby="projects-title">
+  <div class="section-heading">
+    <div class="section-number">02 / Open source</div>
+    <div>
+      <h2 id="projects-title" class="section-title">{% if page.lang == 'en' %}Tools I build and share.{% else %}Herramientas que construyo y comparto.{% endif %}</h2>
+      <p class="section-intro">{% if page.lang == 'en' %}Tooling for terminals, Unix environments, infrastructure, and reproducible development workflows.{% else %}Tooling para terminales, entornos Unix, infraestructura y flujos de desarrollo reproducibles.{% endif %}</p>
+    </div>
+  </div>
+  <div class="project-grid">
+    {% assign featured_projects = site.data.projects | where: 'featured', true | sort: 'display_order' %}
+    {% for project in featured_projects %}{% include project-card.html project=project %}{% endfor %}
+  </div>
+  <div class="hero-actions">
+    <a class="button button-secondary" href="{% if page.lang == 'en' %}{{ '/en/projects/' | relative_url }}{% else %}{{ '/proyectos/' | relative_url }}{% endif %}">{% if page.lang == 'en' %}All projects{% else %}Todos los proyectos{% endif %} →</a>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="capabilities-title">
+  <div class="section-heading">
+    <div class="section-number">03 / Capabilities</div>
+    <h2 id="capabilities-title" class="section-title">{% if page.lang == 'en' %}From architecture to production.{% else %}De la arquitectura al sistema en producción.{% endif %}</h2>
+  </div>
+  <div class="capability-grid">
+    <article class="capability"><h3>Backend & distributed systems</h3><p>Go · TypeScript/Node.js · C# · APIs · Kafka · messaging</p></article>
+    <article class="capability"><h3>Data</h3><p>PostgreSQL · ClickHouse · MySQL · MongoDB · SQLite · SQL Server</p></article>
+    <article class="capability"><h3>Platforms & DevEx</h3><p>Linux/Unix · Docker · CI/CD · observability · reproducible workspaces</p></article>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="experience-title">
+  <div class="section-heading">
+    <div class="section-number">04 / Experience</div>
+    <h2 id="experience-title" class="section-title">{% if page.lang == 'en' %}Systems, teams, continuity.{% else %}Sistemas, equipos, continuidad.{% endif %}</h2>
+  </div>
+  <div class="experience-list">
+    {% for experience in site.data.experience %}{% include experience-item.html experience=experience %}{% endfor %}
+  </div>
+  <div class="hero-actions"><a class="button button-secondary" href="{% if page.lang == 'en' %}{{ '/en/experience/' | relative_url }}{% else %}{{ '/experiencia/' | relative_url }}{% endif %}">{% if page.lang == 'en' %}Full experience{% else %}Experiencia completa{% endif %} →</a></div>
+</section>
+
+<section class="section" id="{% if page.lang == 'en' %}writing{% else %}articulos{% endif %}" aria-labelledby="writing-title">
+  <div class="section-heading">
+    <div class="section-number">05 / Writing</div>
+    <h2 id="writing-title" class="section-title">{% if page.lang == 'en' %}Think. Build. Write.{% else %}Pensar. Construir. Escribir.{% endif %}</h2>
+  </div>
+  {% if page.lang == 'en' %}{% assign posts = site.posts | where: 'lang', 'en' %}{% else %}{% assign posts = site.posts | where_exp: 'post', "post.lang != 'en'" %}{% endif %}
+  <div class="article-grid">
+    {% for post in posts limit:3 %}
+      <article class="article-card">
+        <time class="article-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.intro | strip_html | truncatewords: 28 }}</p>
+        <a href="{{ post.url | relative_url }}">{% if page.lang == 'en' %}Read article{% else %}Leer artículo{% endif %} →</a>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section" aria-labelledby="about-title">
+  <div class="about-grid">
+    <div>
+      <div class="section-number">06 / About</div>
+      <h2 id="about-title" class="section-title">{% if page.lang == 'en' %}Software beyond the first deploy.{% else %}Software más allá del primer deploy.{% endif %}</h2>
+    </div>
+    <div>
+      <p class="section-intro">{% if page.lang == 'en' %}I'm Alejandro, also known as Jano. I care about systems that survive their first deployment: clear architecture, thoughtful tools, and software people can maintain.{% else %}Soy Alejandro, también conocido como Jano. Me interesan los sistemas que sobreviven al primer deployment: arquitectura clara, herramientas bien pensadas y software que se pueda mantener.{% endif %}</p>
+      <a href="{% if page.lang == 'en' %}{{ '/en/about/' | relative_url }}{% else %}{{ '/about/' | relative_url }}{% endif %}">{% if page.lang == 'en' %}More about me{% else %}Más sobre mí{% endif %} →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="{% if page.lang == 'en' %}contact{% else %}contacto{% endif %}" aria-labelledby="contact-title">
+  <div class="contact-grid">
+    <div>
+      <div class="section-number">07 / Contact</div>
+      <h2 id="contact-title" class="section-title">{% if page.lang == 'en' %}Working on a hard problem?{% else %}¿Trabajamos en el mismo problema?{% endif %}</h2>
+    </div>
+    <div>
+      <p class="section-intro">{% if page.lang == 'en' %}Explore my work on GitHub or get in touch through LinkedIn.{% else %}Podés encontrar mi trabajo en GitHub o contactarme por LinkedIn.{% endif %}</p>
+      <div class="contact-actions">
+        <a class="button" href="{{ site.data.profile.linkedin }}" rel="me noopener">LinkedIn</a>
+        <a class="button button-secondary" href="{{ site.data.profile.github }}" rel="me noopener">GitHub</a>
       </div>
-    </a>
-  {% endfor %}
+    </div>
+  </div>
 </section>

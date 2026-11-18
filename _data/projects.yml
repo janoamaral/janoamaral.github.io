@@ -1,0 +1,110 @@
+- id: tokyo-night-tmux
+  name: Tokyo Night Tmux
+  repository: https://github.com/janoamaral/tokyo-night-tmux
+  category: Developer Tooling
+  featured: true
+  display_order: 1
+  technologies: [Shell, Bash, tmux]
+  summary:
+    es: Plugin configurable de tmux con variantes visuales, widgets contextuales y una comunidad activa de contribuidores.
+    en: A configurable tmux plugin with visual variants, contextual widgets, and an active contributor community.
+  metrics:
+    stars: 582
+    forks: 159
+    observed_on: '2026-11-18'
+  status: public
+- id: eniac-development-environment
+  name: ENIAC Development Environment
+  repository: https://github.com/janoamaral/ENIAC-dev-environment
+  category: Platform / DevEx
+  featured: true
+  display_order: 2
+  technologies: [Docker, Coder, Linux]
+  summary:
+    es: Entorno remoto reproducible que separa la terminal local del workspace, toolchain y runtime de desarrollo.
+    en: A reproducible remote environment that separates the local terminal from the development workspace, toolchain, and runtime.
+  metrics:
+    stars: 2
+    forks: 0
+    observed_on: '2026-11-18'
+  status: public
+- id: vestacp-nodejs
+  name: VestaCP Node.js
+  repository: https://github.com/logico/vestacp-nodejs
+  category: Infrastructure Automation
+  featured: true
+  display_order: 3
+  technologies: [Shell, Node.js, Linux]
+  summary:
+    es: Automatización para desplegar y operar aplicaciones Node.js sobre infraestructura Linux con VestaCP.
+    en: Automation for deploying and operating Node.js applications on VestaCP-based Linux infrastructure.
+  metrics:
+    stars: 112
+    forks: 66
+    observed_on: '2026-11-18'
+  status: public
+- id: xresources-themes
+  name: Xresources Themes
+  repository: https://github.com/janoamaral/Xresources-themes
+  category: Unix Tooling
+  featured: false
+  display_order: 4
+  technologies: [Xresources, Shell, Unix]
+  summary:
+    es: Colección reutilizable de configuraciones visuales para terminales Unix y Linux.
+    en: A reusable collection of visual configurations for Unix and Linux terminals.
+  metrics:
+    stars: 317
+    forks: 37
+    observed_on: '2026-11-18'
+  status: public
+- id: typewriter
+  name: Typewriter
+  repository: https://github.com/logico/typewriter
+  related_repository: https://github.com/logico/typewriter-vim
+  category: Editor / Terminal Themes
+  featured: false
+  display_order: 5
+  technologies: [Vim, tmux, Xresources]
+  summary:
+    es: Familia visual inspirada en la escritura enfocada, con soporte para Vim, tmux y terminales.
+    en: A focused-writing visual family for Vim, tmux, and terminal environments.
+  metrics:
+    stars: 158
+    forks: 10
+    observed_on: '2026-11-18'
+  related_metrics:
+    name: Typewriter Vim
+    stars: 74
+    forks: 5
+    observed_on: '2026-11-18'
+  status: archived
+- id: sparkle-cli
+  name: Sparkle CLI
+  repository: https://github.com/janoamaral/sparkle-cli
+  category: AI / Developer Tooling
+  featured: false
+  display_order: 6
+  technologies: [Go, TUI, Ollama]
+  summary:
+    es: Experimento de tooling en Go que integra Ollama con un flujo de terminal y Zsh.
+    en: A Go tooling experiment connecting Ollama with terminal and Zsh workflows.
+  metrics:
+    stars: 2
+    observed_on: '2026-11-18'
+  status: public
+- id: typewriter-vim
+  name: Typewriter Vim
+  repository: https://github.com/logico/typewriter-vim
+  category: Editor Themes
+  featured: false
+  display_order: 7
+  technologies: [Vim Script, Vim]
+  summary:
+    es: Tema de Vim de la familia Typewriter, agrupado con el proyecto principal para evitar duplicar su historia.
+    en: The Vim theme in the Typewriter family, grouped with the main project to avoid duplicating its story.
+  metrics:
+    stars: 74
+    forks: 5
+    observed_on: '2026-11-18'
+  status: grouped

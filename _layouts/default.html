@@ -1,64 +1,38 @@
 <!doctype html>
 <html lang="{{ page.lang | default: 'es' }}">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include social-article-header.html %}
-    <link href="/assets/css/style.css" rel="stylesheet" />
+    <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
   </head>
-  <script>
-    var _paq = window._paq = window._paq || [];
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//m.logico.com.ar/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '4']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-
-  <body class="text-slate-900 dark:text-slate-100 bg-slate-50 dark:bg-gray-950">
-    <div class="bg-background min-h-screen">
-      <div class="container mx-auto px-2 py-8">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-          <aside class="md:col-span-1 flex flex-col order-last md:order-first">
-            {% include about.html %}
-            <!-- {/* Profile Section */} -->
-            <!-- < Profile /> -->
-            <!-- {/* Skills Section */} -->
-            <!-- <Skills /> -->
-          </aside>
-          <!-- {/* (Profile and Skills) Sidebar Section */} -->
-          <!-- <Sidebar /> -->
-          <!-- {/* Main Section */} -->
-          <main class="md:col-span-3 px-2">
-            <nav class="sticky top-0 bg-slate-50 dark:bg-gray-950 py-4 border-b
-              border-b-slate-300 dark:border-b-slate-800 -mt-4">
-              <ul class="flex gap-8 justify-center md:justify-normal flex-row-reverse md:flex-row">
-                <li>
-                  <a href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}" class="text-slate-700 font-bold
-                    dark:text-slate-200 px-4 py-4">Home</a>
-                </li>
-                <li>
-                  <a href="{% if page.lang == 'en' %}/en/about/{% else %}/about{% endif %}" class="text-slate-700 font-bold
-                    dark:text-slate-200 px-4 py-4">{% if page.lang == 'en' %}About{% else %}Acerca{% endif %}</a>
-                </li>
-                {% if page.translation %}
-                <li>
-                  <a href="{{ page.translation | relative_url }}" class="text-slate-700 font-bold
-                    dark:text-slate-200 px-4 py-4">{% if page.lang == 'en' %}ES{% else %}EN{% endif %}</a>
-                </li>
-                {% endif %}
-              </ul>
-            </nav>
-            <div class="pt-8">
-            {{ content }}
-            </div>
-          </main>
-        </div>
-      </div>
+  <body>
+    <a class="skip-link" href="#main">{% if page.lang == 'en' %}Skip to content{% else %}Saltar al contenido{% endif %}</a>
+    <div class="site-shell">
+      {% include site-header.html %}
+      <main id="main" class="page-main">{{ content }}</main>
+      {% include site-footer.html %}
     </div>
+    <script>
+      document.addEventListener('keydown', function (event) {
+        if (event.key !== 'Escape') return;
+        var menu = document.querySelector('.site-menu[open]');
+        if (!menu) return;
+        menu.removeAttribute('open');
+        menu.querySelector('summary').focus();
+      });
+    </script>
+    <script>
+      var _paq = window._paq = window._paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u='//m.logico.com.ar/';
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '4']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
   </body>
 </html>

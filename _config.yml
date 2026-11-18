@@ -19,15 +19,13 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Alejandro Amaral
-email: hola@logico.com.ar
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: >-
+  Software Engineer and Tech Lead with 15+ years of experience designing,
+  building, and operating production systems.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://janoamaral.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: logico_ar
 github_username: janoamaral
+linkedin_url: "https://www.linkedin.com/in/janoamaral/"
 
 input: GFM
 
@@ -44,11 +42,10 @@ host: 0.0.0.0
 postcss:
   cache: false
 
-# Split posts over multiple subdirectories called “page2”, “page3”, … “pageN”
-paginate: 10
-paginate_path: "page:num"
-
 exclude:
+  - README.md
+  - assets/screenshots
+  - openspec
   - package.json
   - postcss.config.js
   - tailwind.config.js

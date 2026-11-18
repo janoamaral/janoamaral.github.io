@@ -1,0 +1,38 @@
+<section class="hero" aria-labelledby="hero-title">
+  <div>
+    <div class="eyebrow">Alejandro Amaral / Software Engineering</div>
+    <h1 id="hero-title">{% if page.lang == 'en' %}I design systems. I build solutions.{% else %}Diseño sistemas. Construyo soluciones.{% endif %}</h1>
+    <p class="hero-lead">{{ site.data.profile.lead[page.lang] }}</p>
+    <div class="hero-actions">
+      <a class="button" href="{{ site.data.profile.linkedin }}" rel="me noopener">{% if page.lang == 'en' %}Connect on LinkedIn{% else %}Conectemos en LinkedIn{% endif %}</a>
+      <a class="button button-secondary" href="{% if page.lang == 'en' %}{{ '/en/projects/' | relative_url }}{% else %}{{ '/proyectos/' | relative_url }}{% endif %}">{% if page.lang == 'en' %}Explore projects{% else %}Ver proyectos{% endif %}</a>
+      <a class="button button-secondary" href="{{ site.data.profile.github }}" rel="me noopener">GitHub</a>
+    </div>
+  </div>
+  <figure class="technical-diagram">
+    <svg viewBox="0 0 480 520" role="img" aria-labelledby="diagram-title diagram-desc">
+      <title id="diagram-title">{% if page.lang == 'en' %}Production system flow{% else %}Flujo de un sistema en producción{% endif %}</title>
+      <desc id="diagram-desc">{% if page.lang == 'en' %}Requests flow through an API and event stream into services and observable data stores.{% else %}Las solicitudes atraviesan una API y un flujo de eventos hacia servicios y almacenes de datos observables.{% endif %}</desc>
+      <rect width="480" height="520" fill="#171a1d"/>
+      <g fill="none" stroke="#373d41">
+        <path d="M40 70H440M40 170H440M40 270H440M40 370H440M40 470H440"/>
+        <path d="M80 30V490M240 30V490M400 30V490"/>
+      </g>
+      <g fill="#0b0d0e" stroke="#a7adb1">
+        <rect x="48" y="54" width="144" height="62"/>
+        <rect x="288" y="154" width="144" height="62"/>
+        <rect x="48" y="254" width="144" height="62"/>
+        <rect x="288" y="354" width="144" height="62"/>
+      </g>
+      <g fill="#f1f0ec" font-family="monospace" font-size="13">
+        <text x="68" y="90">REQUEST / API</text>
+        <text x="309" y="190">EVENT STREAM</text>
+        <text x="68" y="290">SERVICES</text>
+        <text x="309" y="390">DATA / SIGNAL</text>
+      </g>
+      <path class="diagram-line" d="M192 85C250 85 230 185 288 185S250 285 192 285S230 385 288 385" fill="none" stroke="#e76938" stroke-width="3"/>
+      <circle cx="192" cy="85" r="5" fill="#e76938"/>
+      <circle cx="288" cy="385" r="5" fill="#e76938"/>
+    </svg>
+  </figure>
+</section>

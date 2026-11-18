@@ -1,0 +1,30 @@
+- label:
+    es: Inicio
+    en: Home
+  url:
+    es: /
+    en: /en/
+- label:
+    es: Experiencia
+    en: Experience
+  url:
+    es: /experiencia/
+    en: /en/experience/
+- label:
+    es: Proyectos
+    en: Projects
+  url:
+    es: /proyectos/
+    en: /en/projects/
+- label:
+    es: Artículos
+    en: Writing
+  url:
+    es: /#articulos
+    en: /en/#writing
+- label:
+    es: Sobre mí
+    en: About
+  url:
+    es: /about/
+    en: /en/about/
